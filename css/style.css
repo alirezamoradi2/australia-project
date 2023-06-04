@@ -1,0 +1,447 @@
+:root {
+    --c1: #FF4A52;
+    --c2: #1EC6B6;
+    --c3: #040E27;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    transition: color .2s ease-in-out;
+}
+
+a:hover {
+    color: var(--c1);
+}
+
+li {
+    list-style: none;
+    cursor: pointer;
+    transition: color .2s ease-in-out;
+}
+
+li:hover {
+    color: var(--c1);
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.d-flex {
+    display: flex !important;
+}
+
+w-100 {
+    width: 100% !important;
+}
+
+w-50 {
+    width: 50% !important;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+}
+
+.font-15 {
+    font-size: 15px !important;
+}
+
+.header {
+    background-color: #fff;
+    justify-content: space-around;
+    padding: 25px 0;
+    position: relative;
+}
+
+nav li {
+    display: none;
+    font-weight: 500;
+    font-size: 1.3em;
+    margin-right: 35px;
+    margin-top: 10px;
+}
+
+.search-box {
+    justify-content: center;
+    align-items: center;
+}
+
+.search-box a {
+    color: #000;
+}
+
+.menu-box {
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-box a {
+    color: #000;
+}
+
+.slider {
+    background-image: url('../img/banner2.png');
+    height: 50vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.slider-txt {
+    justify-content: space-around;
+    height: 45vw;
+    align-items: center;
+    flex-direction: column;
+}
+
+.slider-txt h3 {
+    font-size: 10vw;
+    font-family: "Nothing You Could DO", cursive;
+    font-weight: 400;
+    color: #fff;
+}
+
+.slider-txt p {
+    font-size: 2.2vw;
+    font-weight: 400;
+    color: #fff;
+}
+
+a.slider-btn {
+    background-color: var(--c2);
+    color: #fff;
+    font-size: 1.1rem;
+    padding: 15px 25px;
+    border-radius: 5px;
+    transition: .3s !important;
+}
+
+a.slider-btn:hover {
+    background-color: var(--c1);
+    color: #fff !important;
+}
+
+.search-bar {
+    background-color: var(--c3);
+    flex-direction: column;
+    align-items: center;
+}
+
+.search-form {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 25px 0px;
+}
+
+input {
+    width: 60%;
+    padding: 20px 45px;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid rgba(134, 134, 134, 0.52);
+    outline: none;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.search-form button {
+    background-color: var(--c1);
+    padding: 15px 40px;
+    border: none;
+    font-size: 18px;
+    margin-top: 20px;
+    color: #fff;
+    border-radius: 5px;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.search-form button:hover {
+    background-color: var(--c2);
+}
+
+.search-bar h3 {
+    color: #fff;
+    font-weight: 400;
+    font-size: 22px;
+    margin: 30px 0 0 0;
+}
+
+.popular-heading {
+    flex-direction: column;
+    align-items: center;
+    margin: 100px 0;
+    text-align: center;
+}
+
+.popular-heading h3 {
+    font-size: 38px;
+    font-weight: 400;
+    color: #040E27;
+    margin: 10px;
+}
+
+.popular-heading p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #7a838B;
+    line-height: 30px;
+}
+
+.popular-content {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.popular-content article {
+    cursor: pointer;
+    margin: 0 10px;
+    transition: transform .3s;
+    position: relative;
+}
+
+.popular-content article:hover {
+    transform: translateY(-10px);
+}
+
+.popular-content article::before {
+    background: linear-gradient(to bottom, rgba(4, 14, 39, 0) 0%, rgba(4, 14, 39, 0.7) 100%);
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 92.4%;
+    z-index: 999;
+    border-radius: 5px;
+}
+
+.popular-content img {
+    margin-bottom: 20px;
+    height: 280px;
+}
+
+.img-info {
+    position: absolute;
+    left: 30px;
+    bottom: 50px;
+    z-index: 1999;
+}
+
+.img-info p {
+    font-size: 22px;
+    color: #fff;
+    font-weight: 400;
+    transition: .3s;
+}
+
+.img-info a {
+    font-size: 12px;
+    color: #fff;
+    font-weight: 400;
+    margin-left: 10px;
+    background-color: var(--c2);
+    border-radius: 30px;
+    padding: 7px 12px;
+}
+
+.popular-content article:hover .img-info p {
+    color: var(--c1);
+    transition: .3s;
+}
+
+.popular-content article:hover .img-info a {
+    background-color: var(--c1);
+    color: #fff;
+    transition: .3s;
+}
+
+.newsletter {
+    background-image: url('../img/newsletter.png');
+    background-position: 65% 65%;
+    background-size: cover;
+    height: 250px;
+    position: relative;
+}
+
+.newsletter::before {
+    position: absolute;
+    content: '';
+    background-color: #040E27;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .7;
+}
+
+.newsletter-container {
+    flex-direction: column;
+    align-items: center;
+    z-index: 999;
+}
+
+.newsletter-heading {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.newsletter-heading h4 {
+    font-size: 24px;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.newsletter-heading p {
+    font-size: 12px;
+    font-weight: 400;
+    color: #AAB1B7;
+}
+
+.newsletter-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.newsletter-form input {
+    width: 40vw;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 5px;
+    padding-left: 15px;
+    color: #000;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 10px 0;
+}
+
+.newsletter-form button {
+    background-color: var(--c1);
+    color: #fff;
+    padding: 16px 10px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.video {
+    background-image: url('../img/video.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+    padding: 130px;
+    margin: 15px 0;
+    width: 100%;
+    position: relative;
+}
+
+.video::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #040E27;
+    content: '';
+    width: 100%;
+    height: 100%;
+    opacity: .2;
+    z-index: 1;
+}
+
+.video-container {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 999;
+}
+
+.video-container h3 {
+    font-family: "Nothing You Could DO", cursive;
+    font-size: 7vw;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.video-btn {
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    background-color: var(--c2);
+    transition: .5s;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-btn:hover {
+    background-color: var(--c1);
+}
+
+.video-btn a {
+    color: #fff;
+}
+
+footer {
+    background-color: var(--c3);
+    padding: 60px 0;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 30px;
+}
+
+.left-footer {
+    margin-bottom: 20px;
+}
+
+.footer-info li {
+    color: #AAB1B7;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+.links li {
+    width: 50%;
+    float: left;
+    font-size: 14px;
+    line-height: 35px;
+}
+
+.links a {
+    color: #AAB1B7;
+    font-weight: 400;
+}
+
+.footer-title {
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.footer-logo {
+    width: 200px;
+}

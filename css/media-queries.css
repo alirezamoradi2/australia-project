@@ -1,0 +1,112 @@
+/* #Small devices (landscape phones, 576px and up) */
+
+@media (min-width: 576px) {
+    .search-box {
+        position: absolute;
+        width: 45px;
+        right: 45px;
+        top: 0;
+        bottom: 0;
+        background-color: var(--c1);
+    }
+
+    .search-box a {
+        color: #fff !important;
+    }
+
+    .menu-box {
+        position: absolute;
+        width: 45px;
+        right: 0px;
+        top: 0;
+        bottom: 0;
+        background-color: var(--c2);
+        z-index: 999;
+    }
+
+    .menu-box a {
+        color: #fff !important;
+    }
+}
+
+
+/* #Medium devices (tablets, 768px and up) */
+
+@media (min-width: 768px) {}
+
+
+/* #Large devices (desktops, 992px and up) */
+
+@media (min-width: 992px) {
+    nav li {
+        display: inline-block;
+    }
+
+    .menu-box {
+        display: none !important;
+    }
+
+    footer {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}
+
+
+/* #Extra large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) {
+    .search-box {
+        width: 100px;
+    }
+
+    .search-bar {
+        flex-direction: row;
+        padding: 0 20px;
+        align-items: stretch;
+    }
+    
+    .search-form {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .search-bar h3 {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    input {
+        width: 20%;
+        padding: 20px 30px;
+        margin: 0;
+    }
+
+    .search-form button {
+        margin-top: 0px;
+    }
+
+    .newsletter-container {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .newsletter-form {
+        display: block;
+    }
+
+    .newsletter-heading {
+        margin: 0 60px 0 0;
+    }
+
+    .newsletter-form button {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 1580px) {
+    /* .popular-content {
+        justify-content: center;
+        width: 80%;
+    } */
+}
